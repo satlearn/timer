@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     background-image: url(time.jpg);background-size:cover ;height:100%;width: 100%;
+    background-attachment: fixed;background-repeat: no-repeat;    
 }
 .timer{
     color:#ffffff;
@@ -44,3 +45,86 @@ body{
 .container span{
     margin: 20px;
 }
+
+@media screen and (max-width:768px){
+    .timer{
+        font-size: 30px;
+        color:#ffffff;
+        font-weight: bold;        
+        line-height: 55px;        
+        top:-10vh;
+        text-align: center;  
+        margin-top: 12%;
+        /* width:400px; */
+        margin-left: 260px;
+        letter-spacing:.2rem;
+        width: 100px;
+    }
+    .time{
+        font-size: 35px;    
+        margin-left: 180px;   
+        line-height: 30px;
+        letter-spacing:.2rem;
+    }
+    .container {
+        margin-left: 20px;
+    }
+
+    #wrapper{
+        border: solid rgb(243, 233, 233) ;    
+        position: relative;
+        margin-right: 150px; 
+    }
+    .container span{
+        margin: 6px;
+    }
+}
+
+@media screen and (max-width:412px){
+    .timer{
+        font-size: 20px;
+        color:#ffffff;
+        font-weight: bold;        
+        line-height: 45px;        
+        top:-10vh;
+        text-align: center;  
+        margin-top: 12%;
+        /* width:400px; */
+        margin-left: 150px;
+        letter-spacing:.2rem;
+        width: 100px;
+    }
+    .time{
+        font-size: 20px;    
+        margin-left: 90px;   
+        line-height: 30px;
+        letter-spacing:.2rem;
+    }
+    /* body{ 
+        background-image: url(time.jpg);background-size:cover ;height:100%;width: 100px;
+        background-attachment: fixed;background-repeat: no-repeat; }   
+ */
+
+.container {    
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+    width :100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    font-size: 25px;
+    margin-top: 25%;
+    color:#ffffff;
+    margin-left: 60px;
+}
+#wrapper{
+    border: solid rgb(243, 233, 233) ;    
+    position: relative;
+    margin-right: 160px; 
+}
+.container span{
+    margin: 5px;
+}
+}
+
